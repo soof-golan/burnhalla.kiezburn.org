@@ -77,17 +77,31 @@
        stacked: never two plus an orphan. A container narrower than 54rem gives
        each card a huge flex-basis, which forces one per line. */
     .cards {
+      --gap-y: 4rem;
+      --gap-x: clamp(4rem, 8vw, 8rem);
       display: flex;
       flex-wrap: wrap;
-      gap: 2rem clamp(2rem, 4vw, 4rem);
+      gap: var(--gap-y) var(--gap-x);
       text-align: center;
+      overflow: hidden;
     }
     .cards article {
       flex-grow: 1;
       flex-basis: calc((54rem - 100%) * 999);
-      border-top: 1px solid var(--ink);
-      padding-top: 2rem;
+      position: relative;
     }
+    /* Dividers: every card draws a line in the gap above it and one in the gap
+       to its left. Lines with no gap there (first row, first column) land
+       outside .cards and are clipped, so only lines between cards show:
+       vertical when side by side, horizontal when stacked. */
+    .cards article::before,
+    .cards article::after {
+      content: "";
+      position: absolute;
+      background: var(--ink);
+    }
+    .cards article::before { inset-inline: 0; top: calc(var(--gap-y) / -2); height: 1px; }
+    .cards article::after { inset-block: 0; left: calc(var(--gap-x) / -2); width: 1px; }
 
     /* Heading beside body text (1:2) while there is room, stacked otherwise */
     .split {
