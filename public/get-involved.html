@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BurnHalla ReWired · Get Involved</title>
+  <meta name="description" content="Kiez Burn decompression Burn Night Berlin event Berlin Burner community">
+  <meta name="theme-color" content="#272343">
+  <link rel="icon" href="https://burnhalla.com/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://burnhalla.com/logo_icon.png">
+  <meta property="og:title" content="BurnHalla">
+  <meta property="og:description" content="Kiez Burn decompression Burn Night Berlin event Berlin Burner community">
+  <meta property="og:url" content="https://burnhalla.com/get-involved">
+  <meta property="og:site_name" content="BurnHalla">
+  <meta property="og:image" content="assets/hero-2027.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather&family=Poppins:wght@400;600&display=swap">
+  <style>
+    :root {
+      --ink: #272343;
+      --paper: #fffffe;
+      --sun: #ffd803;
+      --night: #1e1a3a;
+      --gutter: clamp(1rem, 5vw, 5rem);
+      --measure: 72rem;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font: 400 1rem/1.6 Poppins, system-ui, sans-serif;
+    }
+
+    h1, h2, .button { font-family: Merriweather, Georgia, serif; font-weight: 400; }
+    h2 { font-size: clamp(1.75rem, 1.3rem + 1.5vw, 2.25rem); line-height: 1.3; margin: 0 0 1rem; }
+    p, ul { margin: 0 0 1rem; }
+    a { color: inherit; font-weight: 600; }
+    img { display: block; max-width: 100%; height: auto; }
+
+    /* Content column: fluid side gutter, capped line length */
+    .wrap {
+      width: min(100% - 2 * var(--gutter), var(--measure));
+      margin-inline: auto;
+    }
+    section { padding-block: clamp(2.5rem, 6vw, 6rem); }
+
+    /* Header: title and links share a row while they fit, wrap when they don't */
+    .site-header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.5rem 1.5rem;
+      padding-block: 0.75rem;
+    }
+    .site-header h1 { margin: 0; font-size: 1.5rem; }
+    .site-header a { text-decoration: none; font-weight: 400; }
+    .site-header nav { display: flex; flex-wrap: wrap; gap: 0.5rem 1.5rem; font-family: Merriweather, Georgia, serif; }
+
+    /* Hero: the artwork carries the event name and date, so never crop it */
+    .hero { background: var(--night); }
+    .hero img { width: 100%; max-width: 1440px; margin-inline: auto; }
+
+    .welcome { text-align: center; }
+    .welcome .wrap { max-width: 44rem; }
+    .welcome ul { text-align: left; padding-left: 1.25rem; }
+
+    /* Three cards side by side when the row is at least 54rem wide, otherwise
+       stacked: never two plus an orphan. A container narrower than 54rem gives
+       each card a huge flex-basis, which forces one per line. */
+    .cards {
+      --gap-y: 4rem;
+      --gap-x: clamp(4rem, 8vw, 8rem);
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--gap-y) var(--gap-x);
+      text-align: center;
+      overflow: hidden;
+    }
+    .cards article {
+      flex-grow: 1;
+      flex-basis: calc((54rem - 100%) * 999);
+      position: relative;
+    }
+    /* Dividers: every card draws a line in the gap above it and one in the gap
+       to its left. Lines with no gap there (first row, first column) land
+       outside .cards and are clipped, so only lines between cards show:
+       vertical when side by side, horizontal when stacked. */
+    .cards article::before,
+    .cards article::after {
+      content: "";
+      position: absolute;
+      background: var(--ink);
+    }
+    .cards article::before { inset-inline: 0; top: calc(var(--gap-y) / -2); height: 1px; }
+    .cards article::after { inset-block: 0; left: calc(var(--gap-x) / -2); width: 1px; }
+
+    /* Heading beside body text (1:2) while there is room, stacked otherwise */
+    .split {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem clamp(2rem, 6vw, 6rem);
+    }
+    .split > :first-child { flex: 1 1 16rem; }
+    .split > :last-child { flex: 2 1 28rem; min-width: 0; }
+    .split h3 { font-size: 1rem; font-weight: 600; margin: 0; }
+    .split h3 + p { margin-bottom: 1.5rem; }
+
+    /* Call to action over a photo */
+    .cta {
+      display: grid;
+      place-items: center;
+      min-height: clamp(24rem, 70vh, 40rem);
+      text-align: center;
+      color: var(--paper);
+      background: linear-gradient(rgb(0 0 0 / 0.45), rgb(0 0 0 / 0.45)), url(assets/cta-bg.jpg) center / cover, var(--night);
+    }
+    .cta h2 { font-size: clamp(2rem, 1rem + 4vw, 3.375rem); line-height: 1.2; margin-bottom: 1.5rem; }
+    .buttons { display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      min-height: 44px;
+      padding: 0 1.25rem;
+      border: 4px solid;
+      border-radius: 24px;
+      text-decoration: none;
+      font-size: 1.125rem;
+    }
+    .button.primary { background: var(--sun); border-color: var(--sun); color: var(--ink); }
+    .button.secondary { background: var(--ink); border-color: var(--paper); color: var(--paper); }
+
+    footer { padding-block: 3rem; text-align: center; }
+  
+    /* FAQ */
+    .faq-intro { text-align: center; padding-block: clamp(2rem, 5vw, 4rem); }
+    .faq-intro h2 { font-size: clamp(2.5rem, 1.5rem + 4vw, 4rem); margin: 0 0 .5rem; }
+    .faq-intro p { font-family: Merriweather, Georgia, serif; font-size: 1.25rem; }
+    .faq-intro img { width: min(100%, 22rem); margin: 1.5rem auto 0; }
+    .banner img { margin-inline: auto; }
+    .section-title { text-align: center; }
+    .section-title h2 { margin: 0; }
+    .cards h3, .pair h3 { font-size: 1.25rem; margin: 0 0 1rem; font-family: Merriweather, Georgia, serif; font-weight: 400; }
+    .cards article, .pair > div { min-width: 0; }
+    .cards ul, .pair ul { text-align: left; padding-left: 1.25rem; }
+    .pair { display: flex; flex-wrap: wrap; gap: 2rem clamp(2rem, 6vw, 6rem); }
+    .pair > div { flex: 1 1 20rem; }
+    .legal { font-size: .8125rem; line-height: 1.5; }
+    .legal p { margin: 0 0 .5rem; }
+    /* Get Involved */
+    .involved { max-width: 44rem; }
+    .involved h2 { text-transform: uppercase; }
+    .involved .note { display: flex; gap: .6rem; align-items: baseline; }
+    .involved .buttons { justify-content: flex-start; margin-top: 1.5rem; }
+    .button.discord { background: #7289da; border-color: #7289da; color: var(--paper); }
+  </style>
+</head>
+<body>
+  <header class="wrap site-header">
+    <h1><a href="./">BurnHalla</a></h1>
+    <nav aria-label="Main">
+      <a href="get-involved.html" aria-current="page"><u>Get Involved</u></a>
+      <a href="faq.html">FAQ</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero">
+      <img src="assets/banner-2027.png" width="1140" height="120" alt="BurnHalla ReWired · 20-21/02 @Mahalla">
+    </div>
+
+    <section>
+      <div class="wrap involved">
+        <h2>Discord</h2>
+        <p>That’s where the magic happens! If you are involved in any kind of organization (e.g. taking a lead role in your camp, realizing an area of Kiez Burn, etc.), this is the platform where you can collaborate with the community.</p>
+        <p class="note"><span aria-hidden="true">ℹ️</span> <span>You will need a linked Kiez Burn account here (more info below).</span></p>
+        <div class="buttons">
+          <a class="button discord" href="https://discord.com/invite/atxEZAfmeV" target="_blank" rel="noopener noreferrer">Discord Server</a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap involved">
+        <h2>Mastersheet</h2>
+        <div class="buttons">
+          <a class="button secondary" href="https://docs.google.com/spreadsheets/d/1zkhRVpwKKYtBw48aFQOVWG1rlt5v86aSvDJss4_YVB0/edit?gid=0#gid=0" target="_blank" rel="noopener noreferrer">Mastersheet</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>©2027 All Rights Reserved</footer>
+</body>
+</html>
