@@ -1,214 +1,252 @@
-<!DOCTYPE html>
-<!-- saved from url=(0065)https://burnhalla.com/ -->
-<html lang="en" style="--wm-toolbar-height: 67px;" data-lastpass-safe-prompts-active=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BurnHalla ReWired</title>
+  <meta name="description" content="Kiez Burn decompression Burn Night Berlin event Berlin Burner community">
+  <meta name="theme-color" content="#272343">
+  <link rel="icon" href="https://burnhalla.com/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://burnhalla.com/logo_icon.png">
+  <meta property="og:title" content="BurnHalla">
+  <meta property="og:description" content="Kiez Burn decompression Burn Night Berlin event Berlin Burner community">
+  <meta property="og:url" content="https://burnhalla.com/">
+  <meta property="og:site_name" content="BurnHalla">
+  <meta property="og:image" content="assets/hero-2027.webp">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather&family=Poppins:wght@400;600&display=swap">
+  <style>
+    :root {
+      --ink: #272343;
+      --paper: #fffffe;
+      --sun: #ffd803;
+      --night: #1e1a3a;
+      --gutter: clamp(1rem, 5vw, 5rem);
+      --measure: 72rem;
+    }
 
+    *, *::before, *::after { box-sizing: border-box; }
 
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font: 400 1rem/1.6 Poppins, system-ui, sans-serif;
+    }
 
+    h1, h2, .button { font-family: Merriweather, Georgia, serif; font-weight: 400; }
+    h2 { font-size: clamp(1.75rem, 1.3rem + 1.5vw, 2.25rem); line-height: 1.3; margin: 0 0 1rem; }
+    p, ul { margin: 0 0 1rem; }
+    a { color: inherit; font-weight: 600; }
+    img { display: block; max-width: 100%; height: auto; }
 
+    /* Content column: fluid side gutter, capped line length */
+    .wrap {
+      width: min(100% - 2 * var(--gutter), var(--measure));
+      margin-inline: auto;
+    }
+    section { padding-block: clamp(2.5rem, 6vw, 6rem); }
 
+    /* Header: title and links share a row while they fit, wrap when they don't */
+    .site-header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.5rem 1.5rem;
+      padding-block: 0.75rem;
+    }
+    .site-header h1 { margin: 0; font-size: 1.5rem; }
+    .site-header a { text-decoration: none; font-weight: 400; }
+    .site-header nav { display: flex; flex-wrap: wrap; gap: 0.5rem 1.5rem; font-family: Merriweather, Georgia, serif; }
 
+    /* Hero: the artwork carries the event name and date, so never crop it */
+    .hero { background: var(--night); }
+    .hero img { width: 100%; max-width: 1440px; margin-inline: auto; }
 
-<!-- End Wayback Rewrite JS Include -->
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><link rel="stylesheet" href="assets/36fc24a52ff0ea95.css" data-precedence="next"><link rel="stylesheet" href="assets/bf6f8eb56188537b.css" data-precedence="next"><link rel="stylesheet" href="assets/a9ec1a1222361d7c.css" data-precedence="next"><link rel="stylesheet" href="assets/adc3653f86995781.css" data-precedence="next"><link rel="stylesheet" href="assets/4944f583bbb0bbae.css" data-precedence="next"><link rel="stylesheet" href="assets/597639f0f1cf27b5.css" data-precedence="next"><link rel="preload" as="script" fetchpriority="low" href="https://beacons.ai/_next/static/chunks/8e6c3defd4fb6638.js"><link href="https://web.archive.org/splashscreens/iphone5_splash.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image"><link href="https://web.archive.org/splashscreens/iphone6_splash.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image"><link href="https://web.archive.org/splashscreens/iphoneplus_splash.png" media="(device-width: 621px) and (device-height: 1104px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image"><link href="https://web.archive.org/splashscreens/iphonex_splash.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image"><link href="https://web.archive.org/splashscreens/iphonexr_splash.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image"><link href="https://web.archive.org/splashscreens/iphonexsmax_splash.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image"><link href="https://web.archive.org/splashscreens/ipad_splash.png" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image"><link href="https://web.archive.org/splashscreens/ipadpro1_splash.png" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image"><link href="https://web.archive.org/splashscreens/ipadpro3_splash.png" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image"><link href="https://web.archive.org/splashscreens/ipadpro2_splash.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image"><link href="https://burnhalla.com/logo_icon.png" sizes="180x180" rel="apple-touch-icon"><meta name="theme-color" content="#000000"><title>BurnHalla ReWired</title><meta name="description" content="Kiez Burn decompression Burn Night Berlin event Berlin Burner community"><link rel="manifest" href="https://burnhalla.com/manifest.json"><meta name="fb:app_id" content="3294868390539011"><link rel="canonical" href="index.html"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="BurnHalla"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta property="og:title" content="BurnHalla"><meta property="og:description" content="Kiez Burn decompression Burn Night Berlin event Berlin Burner community"><meta property="og:url" content="https://burnhalla.com/"><meta property="og:site_name" content="BurnHalla"><meta property="og:image" content="assets/hero-2027.webp"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="600"><meta property="og:type" content="website"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content="@beaconsai"><meta name="twitter:creator" content="@beeora"><meta name="twitter:title" content="BurnHalla"><meta name="twitter:description" content="Kiez Burn decompression Burn Night Berlin event Berlin Burner community"><meta name="twitter:image" content="https://cdn.beacons.ai/user_content/XvDeqxY8KIatLpdjrylAG8ktL4W2/profile_beeora.png?t=1762627361269"><link rel="shortcut icon" href="https://burnhalla.com/favicon.ico"><link rel="icon" href="https://burnhalla.com/favicon.ico"><link rel="apple-touch-icon" href="https://burnhalla.com/favicon.ico"><style id="__jsx-undefined">
-    @import url(https://fonts.googleapis.com/css?family=Poppins:400|Merriweather:400&display=swap);
-     #website-viewer-accdaab9-a247-43ee-9ded-2282dca90536 {
-  font-family: Poppins, sans-serif;
-  font-weight: 400;
-}
- #website-viewer-accdaab9-a247-43ee-9ded-2282dca90536 h1 {
-  font-family: Merriweather, serif;
-  font-weight: 400;
-}
+    .welcome { text-align: center; }
+    .welcome .wrap { max-width: 44rem; }
+    .welcome ul { text-align: left; padding-left: 1.25rem; }
 
- #website-viewer-accdaab9-a247-43ee-9ded-2282dca90536  h2 {
-  font-family: Merriweather, serif;
-  font-weight: 400;
-}
+    /* Three cards side by side when the row is at least 54rem wide, otherwise
+       stacked: never two plus an orphan. A container narrower than 54rem gives
+       each card a huge flex-basis, which forces one per line. */
+    .cards {
+      --gap-y: 4rem;
+      --gap-x: clamp(4rem, 8vw, 8rem);
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--gap-y) var(--gap-x);
+      text-align: center;
+      overflow: hidden;
+    }
+    .cards article {
+      flex-grow: 1;
+      flex-basis: calc((54rem - 100%) * 999);
+      position: relative;
+    }
+    /* Dividers: every card draws a line in the gap above it and one in the gap
+       to its left. Lines with no gap there (first row, first column) land
+       outside .cards and are clipped, so only lines between cards show:
+       vertical when side by side, horizontal when stacked. */
+    .cards article::before,
+    .cards article::after {
+      content: "";
+      position: absolute;
+      background: var(--ink);
+    }
+    .cards article::before { inset-inline: 0; top: calc(var(--gap-y) / -2); height: 1px; }
+    .cards article::after { inset-block: 0; left: calc(var(--gap-x) / -2); width: 1px; }
 
- #website-viewer-accdaab9-a247-43ee-9ded-2282dca90536  h3 {
-  font-family: Merriweather, serif;
-  font-weight: 400;
-}
+    /* Heading beside body text (1:2) while there is room, stacked otherwise */
+    .split {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem clamp(2rem, 6vw, 6rem);
+    }
+    .split > :first-child { flex: 1 1 16rem; }
+    .split > :last-child { flex: 2 1 28rem; min-width: 0; }
+    .split h3 { font-size: 1rem; font-weight: 600; margin: 0; }
+    .split h3 + p { margin-bottom: 1.5rem; }
 
- #website-viewer-accdaab9-a247-43ee-9ded-2282dca90536  .website-button {
-  font-family: Merriweather, serif;
-  font-weight: 400;
-}
+    /* Call to action over a photo */
+    .cta {
+      display: grid;
+      place-items: center;
+      min-height: clamp(24rem, 70vh, 40rem);
+      text-align: center;
+      color: var(--paper);
+      background: linear-gradient(rgb(0 0 0 / 0.45), rgb(0 0 0 / 0.45)), url(assets/cta-bg.jpg) center / cover, var(--night);
+    }
+    .cta h2 { font-size: clamp(2rem, 1rem + 4vw, 3.375rem); line-height: 1.2; margin-bottom: 1.5rem; }
+    .buttons { display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      min-height: 44px;
+      padding: 0 1.25rem;
+      border: 4px solid;
+      border-radius: 24px;
+      text-decoration: none;
+      font-size: 1.125rem;
+    }
+    .button.primary { background: var(--sun); border-color: var(--sun); color: var(--ink); }
+    .button.secondary { background: var(--ink); border-color: var(--paper); color: var(--paper); }
 
- #website-viewer-accdaab9-a247-43ee-9ded-2282dca90536  .nav-link {
-  font-family: Merriweather, serif;
-  font-weight: 400;
-}
+    footer { padding-block: 3rem; text-align: center; }
+  </style>
+</head>
+<body>
+  <header class="wrap site-header">
+    <h1><a href="./">BurnHalla</a></h1>
+    <nav aria-label="Main">
+      <a href="get-involved.html">Get Involved</a>
+      <a href="faq.html">FAQ</a>
+    </nav>
+  </header>
 
- #website-viewer-accdaab9-a247-43ee-9ded-2282dca90536 h4 {
-  font-family: Merriweather, serif;
-  font-weight: 400;
-}
+  <main>
+    <div class="hero">
+      <img src="assets/hero-2027.webp" width="1200" height="630" alt="BurnHalla ReWired · 20-21/02 @Mahalla">
+    </div>
 
- #website-viewer-accdaab9-a247-43ee-9ded-2282dca90536 .website-button {
-  border-radius: 24px !important;
-  border-width: 4px !important;
-}
+    <section class="welcome">
+      <div class="wrap">
+        <h2>Welcome to BurnHalla</h2>
+        <p>First things first: this is not your regular burn night. This is a full 24-hour BurnHalla experience!</p>
+        <p>So what does that mean?</p>
+        <ul>
+          <li>The program with workshops, performances and shows starts at 12:00 noon — don’t miss out &amp; come early!</li>
+          <li>There is nothing for sale on site!</li>
+          <li>BurnHalla bars run entirely on collective donations! Bring something with you to the event or contribute ahead of time to the drinks donation pool!</li>
+          <li>Don’t forget to bring your own cup!</li>
+          <li>If you want to eat, bring a plate and something for the potluck.</li>
+        </ul>
+        <p><a href="faq.html">More Info</a></p>
+      </div>
+    </section>
 
- #website-viewer-accdaab9-a247-43ee-9ded-2282dca90536 .subpalette-c {
-  color: #272343;
-  background-color: #ffd803;
-}
- #website-viewer-accdaab9-a247-43ee-9ded-2282dca90536 .subpalette-c .website-button.primary {
-  color: #fffffe;
-  background-color: #272343;
-  border-color: #272343;
-}
+    <section>
+      <div class="wrap cards">
+        <article>
+          <h2>Programme</h2>
+          <p>We got a stacked programme with everything from workshops, to cabaret, to high line performances, fire shows, dance floors and so much more.</p>
+          <p>The full schedule will be published here soon. Make sure to arrive early! We start at noon.</p>
+        </article>
+        <article>
+          <h2>Food &amp; Drinks</h2>
+          <p>BurnHalla is a non-commercial burner experience which means <strong>nothing will be for sale on site</strong>.</p>
+          <p>That also means that bars and food depend on your donations.</p>
+          <p>You can either bring drinks to site or donate to the money pool <a href="https://www.paypal.com/pool/9kxOxVrUSd?sr=accr" rel="noopener noreferrer">here</a>.</p>
+        </article>
+        <article>
+          <h2>The Space</h2>
+          <p>For 24 hours you can explore BurnHalla on 3 different levels with astonishing art, diverse dance floors, themed bars, workshop rooms, cozy and sexy spaces, high-flying performances, unexpected disco shapes, light shows, and more.</p>
+          <p>Find the map <a href="https://drive.google.com/file/d/1UtG60KkNa3Mtm1WzYh93g2OISOd2YOer/view" rel="noopener noreferrer">here</a>.</p>
+        </article>
+      </div>
+    </section>
 
- #website-viewer-accdaab9-a247-43ee-9ded-2282dca90536 .subpalette-c .website-button.secondary {
-  color: #272343;
-  background-color: #ffd803;
-  border-color: #272343;
-}
+    <section>
+      <div class="wrap split">
+        <div>
+          <h2>How to contribute?</h2>
+          <p>We will turn a bare machine hall with dusty basements into a miraculous wonderland only because each and everyone does their part. Here are some suggestions on ways to contribute.</p>
+        </div>
+        <div>
+          <h3>🎨 Decorate a Space</h3>
+          <p>Some spaces are still waiting for magic. If you want to bring lights, blankets, hippie traps, any object, or visual chaos, please do. Let us know via this <a href="https://forms.gle/ZS8LdZrg7yVzogPTA" rel="noopener noreferrer">form</a> so we can coordinate and support you. Tagging machines are available.</p>
+          <h3>🍸 Support the bars</h3>
+          <p>Donate to the <a href="https://www.paypal.com/pool/9kxOxVrUSd?sr=accr" rel="noopener noreferrer">shared money pool</a> before the event or bring a bottle contribution on site. There are no drinks included in the ticket price, and bars depend entirely on your donations. Spread the word!</p>
+          <h3>🍕 Bring a food dream</h3>
+          <p>Pizza oven, paella, cheese fondue, midnight soup: food is love and an incredible way to gift something special to the community. Sign up on the <a href="https://docs.google.com/spreadsheets/d/1xs5sYcaF2qsVkn1l8JAI7XkaKbyqofqaCIMUepozYVo/edit?gid=251451813#gid=251451813" rel="noopener noreferrer">sheet</a>.</p>
+          <h3>🙋 Volunteer</h3>
+          <p>There are still a few volunteer shifts left and we especially need help with transport on Thursday and Monday. Sign up <a href="https://signup.com/group/1113367714025" rel="noopener noreferrer">here</a>.</p>
+        </div>
+      </div>
+    </section>
 
- #website-viewer-accdaab9-a247-43ee-9ded-2282dca90536 .subpalette-c .seated-event-link1 {
-  color: #fffffe;
-  background-color: #272343;
-  border-color: #fffffe;
-}
+    <section>
+      <div class="wrap split">
+        <div>
+          <h2>What else?</h2>
+          <p>For even more information head to our <a href="faq.html">FAQ</a></p>
+        </div>
+        <div>
+          <h3>👗 Dress accordingly and get lost in layers</h3>
+          <p>Some areas will feel like outdoor temperatures, others will be heated. Layers are your friend. So bring your burner coat with fairy lights for the main hall and house shoes or thick socks for shoes-off spaces. There will be multiple wardrobes to help us keep things in order.</p>
+          <h3>🏷️ Label your stuff &gt;&gt; Leave no trace &gt;&gt; Lost &amp; Found</h3>
+          <p>In that order! We will reiterate this again. And again. Aaaaand. Again. Watch out for your things. Label them. We will be over a thousand people, and we depend on all of us to keep the space nice and tidy. There will be wardrobes. There will be a Lost &amp; Found. Make use of them.</p>
+          <h3>🎒 Packing list</h3>
+          <p>Other useful items to bring are a head torch, ashtray for smokers, towels for sauna and playspace, as well as a camping chair if you wanna sit. But don’t worry, we will send you another reminder with a detailed packing list shortly before the event.</p>
+          <h3>🎟️ Ticket resale</h3>
+          <p>We are officially sold out! So if you cannot make it, another burner might gladly take your ticket off your hands. You can connect in our dedicated <a href="https://web.telegram.org/a/?account=2#401100845" rel="noopener noreferrer">resale channel</a>. You can initiate your own transfer through the ticket link you received until 24h hours before the event.</p>
+        </div>
+      </div>
+    </section>
 
- #website-viewer-accdaab9-a247-43ee-9ded-2282dca90536 .subpalette-c .seated-event-link1:hover {
-  color: #fffffe;
-  background-color: #272343;
-  border-color: #fffffe;
-}
+    <section class="cta">
+      <div class="wrap">
+        <h2>FIND OUT MORE ON HOW TO GET INVOLVED</h2>
+        <div class="buttons">
+          <a class="button primary" href="https://t.me/+sGF-j6nRjXY2MzEy" target="_blank" rel="noopener noreferrer">Get Involved</a>
+          <a class="button secondary" href="faq.html">Learn more</a>
+        </div>
+      </div>
+    </section>
 
- #website-viewer-accdaab9-a247-43ee-9ded-2282dca90536 .subpalette-c .seated-follow-link {
-  color: #272343;
-  background-color: #fffffe;
-  border-color: #272343;
-}
+    <section>
+      <div class="wrap">
+        <img src="assets/banner-2027.png" width="1140" height="120" alt="BurnHalla ReWired · 20-21/02 @Mahalla" loading="lazy">
+      </div>
+    </section>
+  </main>
 
- #website-viewer-accdaab9-a247-43ee-9ded-2282dca90536 .subpalette-c .seated-follow-link:hover {
-  color: #fffffe;
-  background-color: #272343;
-  border-color: #fffffe;
-}
-
- #website-viewer-accdaab9-a247-43ee-9ded-2282dca90536 .subpalette-c .seated-events-table {
-  border-color: #272343;
-}
-
- #website-viewer-accdaab9-a247-43ee-9ded-2282dca90536 .subpalette-c  .seated-event-row {
-  border-color: #272343;
-}
-
- #website-viewer-accdaab9-a247-43ee-9ded-2282dca90536 .subpalette-b {
-  color: #fffffe;
-  background-color: #272343;
-}
- #website-viewer-accdaab9-a247-43ee-9ded-2282dca90536 .subpalette-b .website-button.primary {
-  color: #272343;
-  background-color: #ffd803;
-  border-color: #ffd803;
-}
-
- #website-viewer-accdaab9-a247-43ee-9ded-2282dca90536 .subpalette-b .website-button.secondary {
-  color: #fffffe;
-  background-color: #272343;
-  border-color: #fffffe;
-}
-
- #website-viewer-accdaab9-a247-43ee-9ded-2282dca90536 .subpalette-b .seated-event-link1 {
-  color: #272343;
-  background-color: #ffd803;
-  border-color: #272343;
-}
-
- #website-viewer-accdaab9-a247-43ee-9ded-2282dca90536 .subpalette-b .seated-event-link1:hover {
-  color: #272343;
-  background-color: #ffd803;
-  border-color: #272343;
-}
-
- #website-viewer-accdaab9-a247-43ee-9ded-2282dca90536 .subpalette-b .seated-follow-link {
-  color: #ffd803;
-  background-color: #272343;
-  border-color: #ffd803;
-}
-
- #website-viewer-accdaab9-a247-43ee-9ded-2282dca90536 .subpalette-b .seated-follow-link:hover {
-  color: #272343;
-  background-color: #ffd803;
-  border-color: #272343;
-}
-
- #website-viewer-accdaab9-a247-43ee-9ded-2282dca90536 .subpalette-b .seated-events-table {
-  border-color: #fffffe;
-}
-
- #website-viewer-accdaab9-a247-43ee-9ded-2282dca90536 .subpalette-b  .seated-event-row {
-  border-color: #fffffe;
-}
-
- #website-viewer-accdaab9-a247-43ee-9ded-2282dca90536 .subpalette-a {
-  color: #272343;
-  background-color: #fffffe;
-}
- #website-viewer-accdaab9-a247-43ee-9ded-2282dca90536 .subpalette-a .website-button.primary {
-  color: #272343;
-  background-color: #ffd803;
-  border-color: #ffd803;
-}
-
- #website-viewer-accdaab9-a247-43ee-9ded-2282dca90536 .subpalette-a .website-button.secondary {
-  color: #272343;
-  background-color: #fffffe;
-  border-color: #272343;
-}
-
- #website-viewer-accdaab9-a247-43ee-9ded-2282dca90536 .subpalette-a .seated-event-link1 {
-  color: #272343;
-  background-color: #ffd803;
-  border-color: #272343;
-}
-
- #website-viewer-accdaab9-a247-43ee-9ded-2282dca90536 .subpalette-a .seated-event-link1:hover {
-  color: #272343;
-  background-color: #ffd803;
-  border-color: #272343;
-}
-
- #website-viewer-accdaab9-a247-43ee-9ded-2282dca90536 .subpalette-a .seated-follow-link {
-  color: #ffd803;
-  background-color: #272343;
-  border-color: #ffd803;
-}
-
- #website-viewer-accdaab9-a247-43ee-9ded-2282dca90536 .subpalette-a .seated-follow-link:hover {
-  color: #272343;
-  background-color: #ffd803;
-  border-color: #272343;
-}
-
- #website-viewer-accdaab9-a247-43ee-9ded-2282dca90536 .subpalette-a .seated-events-table {
-  border-color: #272343;
-}
-
- #website-viewer-accdaab9-a247-43ee-9ded-2282dca90536 .subpalette-a  .seated-event-row {
-  border-color: #272343;
-}
-
-  </style><style id="mobile-fixes">
-@media (max-width: 767px) {
-  /* Show the whole hero artwork (event name and date) instead of a cropped slice */
-  #hero {
-    aspect-ratio: 1200 / 630;
-    padding: 0 !important;
-    background-size: contain !important;
-    background-repeat: no-repeat;
-  }
-  #hero .rich-text-html { display: none; }
-
-  /* The hamburger needs JS that is not on the page; show the links instead */
-  #site-nav { display: flex !important; gap: 16px; }
-  #site-nav .nav-link { margin: 0 !important; font-size: 16px !important; }
-}
-  </style><style data-emotion="css q7mezt" data-s="">.css-q7mezt{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;width:1em;height:1em;display:inline-block;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;-webkit-transition:fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;fill:currentColor;font-size:1.5rem;}</style></head><body>
- <div hidden=""><!--$--><!--/$--></div><beacons-tag></beacons-tag><div id="root"><div class="previewer website-viewer relative h-full overflow-y-auto" id="website-viewer-accdaab9-a247-43ee-9ded-2282dca90536"><div class=""><div class=""><div><div class="website-viewer-menu subpalette-a box-border flex w-full items-center justify-between px-2 preview-desktop:px-4" style="padding-top:8px;padding-bottom:8px"><div class="flex items-center" style="min-width:none;height:40px"><a class="w-full" style="text-decoration:none;color:inherit" tabindex="0" role="button" href="index.html"><h1 style="font-size:24px">BurnHalla</h1></a></div><nav id="site-nav" class="flex items-center justify-center preview-mobile:hidden"><a aria-label="Get Involved nav link" class="nav-link preview-desktop:mr-6 preview-desktop:text-16 preview-mobile:mb-2 preview-mobile:text-22 no-underline" style="color:inherit" tabindex="0" role="button" href="get-involved.html">Get Involved</a><a aria-label="FAQ nav link" class="nav-link preview-desktop:mr-6 preview-desktop:text-16 preview-mobile:mb-2 preview-mobile:text-22 no-underline" style="color:inherit" tabindex="0" role="button" href="faq.html">FAQ</a></nav></div></div></div><div id="hero" role="img" aria-label="BurnHalla ReWired · 20-21/02 @Mahalla" class="relative outline outline-2 -outline-offset-2 website-block subpalette-a content-block-container flex justify-center outline-transparent" style="padding-bottom:24px;padding-top:24px;background-image:url(assets/hero-2027.webp);background-size:cover;background-position:center;background-color:#1e1a3a"><div class="content-block box-border flex grow justify-between overflow-hidden px-0 preview-mobile:flex-col website-side-padding" style="max-width:1440px"><div class="flex grow self-stretch preview-mobile:!px-2" style="padding-bottom:0px;padding-top:0px;padding-left:0;padding-right:0"><div class="rich-text-html relative grow outline outline-2 -outline-offset-2 preview-mobile:min-w-0 preview-mobile:self-center outline-transparent preview-desktop:self-center"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></div></div></div></div><div class="relative outline outline-2 -outline-offset-2 website-block subpalette-a content-block-container flex justify-center outline-transparent" style="padding-bottom:30px;padding-top:3px"><div class="content-block box-border flex grow justify-between overflow-hidden px-0 preview-mobile:flex-col website-side-padding" style="max-width:1440px"><div class="flex grow self-stretch preview-mobile:!px-2" style="padding-bottom:30px;padding-top:30px;padding-left:0;padding-right:0"><div class="rich-text-html relative grow outline outline-2 -outline-offset-2 preview-mobile:min-w-0 preview-mobile:self-center outline-transparent preview-desktop:self-center"><br><h2 align="center"><strong>Welcome to BurnHalla</strong></h2><br><p align="center">First things first: this is not your regular burn night. This is a full 24-hour BurnHalla experience!</p><br><p align="center">So what does that mean?</p><br><ul><li align="left">The program with workshops, performances and shows starts at 12:00 noon — don’t miss out &amp; come early!</li><li align="left">There is nothing for sale on site!</li><li align="left">BurnHalla bars run entirely on collective donations! Bring something with you to the event or contribute ahead of time to the drinks donation pool!</li><li align="left">Don’t forget to bring your own cup!</li><li align="left">If you want to eat, bring a plate and something for the potluck.</li></ul><br><p align="center"><a href="faq.html" rel="noopener noreferrer"><u><strong>More</strong></u></a><u><strong> </strong></u><a href="faq.html" rel="noopener noreferrer"><u><strong>Info</strong></u></a></p></div></div></div></div><div class="relative outline outline-2 -outline-offset-2 website-block subpalette-a content-block-container flex justify-center outline-transparent" style="padding-bottom:100px;padding-top:100px"><div class="content-block box-border flex grow justify-between overflow-hidden px-0 preview-mobile:flex-col website-side-padding" style="max-width:1440px"><div class="flex grow self-stretch preview-mobile:!px-2" style="padding-bottom:0px;padding-top:0px;padding-left:0;padding-right:48px;flex-basis:33%"><div class="rich-text-html relative grow outline outline-2 -outline-offset-2 preview-mobile:min-w-0 preview-mobile:self-center outline-transparent preview-desktop:self-center"><h2 align="center"><strong>Programme</strong></h2><h2 align="center"><br></h2><p align="center">We got a stacked programme with everything from workshops, to cabaret, to high line performances, fire shows, dance floors and so much more.</p><br><p align="center">The full schedule will be published here soon. Make sure to arrive early! We start at noon.</p></div></div><div class="shrink preview-desktop:px-8 preview-desktop:py-2 preview-mobile:py-8"><div class="preview-desktop:h-full preview-desktop:w-px preview-mobile:h-px preview-mobile:w-full" style="background-color:black"></div></div><div class="flex grow self-stretch preview-mobile:!px-2" style="padding-bottom:0px;padding-top:0px;padding-left:48px;padding-right:48px;flex-basis:33%"><div class="rich-text-html relative grow outline outline-2 -outline-offset-2 preview-mobile:min-w-0 preview-mobile:self-center outline-transparent preview-desktop:self-center"><h2 align="center"><strong>Food &amp; Drinks</strong></h2><br><p align="center">BurnHalla is a non-commercial burner experience which means <strong>nothing will be for sale on site</strong>. </p><br><p align="center">That also means that bars and food depend on your donations.</p><br><p align="center">You can either bring drinks to site or donate to the money pool <a href="https://www.paypal.com/pool/9kxOxVrUSd?sr=accr" rel="noopener noreferrer">here</a>. </p></div></div><div class="shrink preview-desktop:px-8 preview-desktop:py-2 preview-mobile:py-8"><div class="preview-desktop:h-full preview-desktop:w-px preview-mobile:h-px preview-mobile:w-full" style="background-color:black"></div></div><div class="flex grow self-stretch preview-mobile:!px-2" style="padding-bottom:0px;padding-top:0px;padding-left:48px;padding-right:0;flex-basis:33%"><div class="rich-text-html relative grow outline outline-2 -outline-offset-2 preview-mobile:min-w-0 preview-mobile:self-center outline-transparent preview-desktop:self-center"><h2 align="center"><strong>The Space</strong></h2><br><p align="center">For 24 hours you can explore BurnHalla on 3 different levels with astonishing art, diverse dance floors, themed bars, workshop rooms, cozy and sexy spaces, high-flying performances, unexpected disco shapes, light shows, and more.</p><br><p align="center">Find the map <a href="https://drive.google.com/file/d/1UtG60KkNa3Mtm1WzYh93g2OISOd2YOer/view" rel="noopener noreferrer">here</a>.</p><br></div></div></div></div><div class="relative outline outline-2 -outline-offset-2 website-block subpalette-a content-block-container flex justify-center outline-transparent" style="padding-bottom:24px;padding-top:24px"><div class="content-block box-border flex grow justify-between overflow-hidden px-0 preview-mobile:flex-col website-side-padding" style="max-width:1440px"><div class="flex grow self-stretch preview-mobile:!px-2" style="padding-bottom:0px;padding-top:0px;padding-left:0;padding-right:48px;flex-basis:33%"><div class="rich-text-html relative grow outline outline-2 -outline-offset-2 preview-mobile:min-w-0 preview-mobile:self-center outline-transparent preview-desktop:self-center"><h2 align="left">How to contribute?</h2><br><p align="left">We will turn a bare machine hall with dusty basements into a miraculous wonderland only because each and everyone does their part. Here are some suggestions on ways to contribute.</p></div></div><div class="flex grow self-stretch preview-mobile:!px-2" style="padding-bottom:0px;padding-top:0px;padding-left:48px;padding-right:0;flex-basis:67%"><div class="rich-text-html relative grow outline outline-2 -outline-offset-2 preview-mobile:min-w-0 preview-mobile:self-center outline-transparent preview-desktop:self-center"><p align="left">🎨<strong> Decorate a Space</strong></p><p align="left">Some spaces are still waiting for magic. If you want to bring lights, blankets, hippie traps, any object, or visual chaos, please do. Let us know via this <a href="https://forms.gle/ZS8LdZrg7yVzogPTA" rel="noopener noreferrer">form</a> so we can coordinate and support you. Tagging machines are available.</p><br><p align="left">🍸<strong> Support the bars</strong></p><p align="left">Donate to the <a href="https://www.paypal.com/pool/9kxOxVrUSd?sr=accrhttps://www.paypal.com/pool/9kxOxVrUSd?sr=accrhttps://www.paypal.com/pool/9kxOxVrUSd?sr=accr" rel="noopener noreferrer">shared money pool</a> before the event or bring a bottle contribution on site. There are no drinks included in the ticket price, and bars depend entirely on your donations. Spread the word!</p><br><p align="left"><strong>🍕 Bring a food dream</strong></p><p align="left">Pizza oven, paella, cheese fondue, midnight soup: food is love and an incredible way to gift something special to the community. Sign up on the <a href="https://docs.google.com/spreadsheets/d/1xs5sYcaF2qsVkn1l8JAI7XkaKbyqofqaCIMUepozYVo/edit?gid=251451813#gid=251451813" rel="noopener noreferrer">sheet</a>.</p><br><p align="left"><strong>🙋 Volunteer</strong></p><p align="left">There are still a few volunteer shifts left and we especially need help with transport on Thursday and Monday. Sign up <a href="https://signup.com/group/1113367714025" rel="noopener noreferrer">here</a>.</p><br><br></div></div></div></div><div class="relative outline outline-2 -outline-offset-2 website-block subpalette-a content-block-container flex justify-center outline-transparent" style="padding-bottom:24px;padding-top:24px"><div class="content-block box-border flex grow justify-between overflow-hidden px-0 preview-mobile:flex-col website-side-padding" style="max-width:1440px"><div class="flex grow self-stretch preview-mobile:!px-2" style="padding-bottom:0px;padding-top:0px;padding-left:0;padding-right:48px;flex-basis:33%"><div class="rich-text-html relative grow outline outline-2 -outline-offset-2 preview-mobile:min-w-0 preview-mobile:self-center outline-transparent preview-desktop:self-center"><h2 align="left">What else?</h2><br><p align="left">For even more information head to our our <a href="faq.html" rel="noopener noreferrer">FAQ</a></p></div></div><div class="flex grow self-stretch preview-mobile:!px-2" style="padding-bottom:0px;padding-top:0px;padding-left:48px;padding-right:0;flex-basis:67%"><div class="rich-text-html relative grow outline outline-2 -outline-offset-2 preview-mobile:min-w-0 preview-mobile:self-center outline-transparent preview-desktop:self-center"><p align="left">👗 <strong>Dress accordingly and get lost in layers</strong></p><p align="left">Some areas will feel like outdoor temperatures, others will be heated. Layers are your friend. So bring your burner coat with fairy lights for the main hall and house shoes or thick socks for shoes-off spaces.There will be multiple wardrobes to help us keep things in order. </p><br><p align="left">🏷️ <strong>Label your stuff &gt;&gt; Leave no trace &gt;&gt; Lost &amp; Found</strong></p><p align="left">In that order! We will reiterate this again. And again. Aaaaand. Again. Watch out for your things. Label them. We will be over a thousand people, and we depend on all of us to keep the space nice and tidy. There will be wardrobes. There will be a Lost &amp; Found. Make use of them.</p><br><p align="left">🎒 <strong>Packing list</strong></p><p align="left">Other useful items to bring are a head torch, ashtray for smokers, towels for sauna and playspace, as well as a camping chair if you wanna sit. But don’t worry, we will send you another reminder with a detailed packing list shortly before the event.</p><br><p align="left">🎟️ <strong>Ticket resale </strong></p><p align="left">We are officially sold out! So if you cannot make it, another burner might gladly take your ticket off your hands. You can connect in our dedicated <a href="https://web.telegram.org/a/?account=2#401100845" rel="noopener noreferrer">resale channel</a>. You can initiate your own transfer through the ticket link you received until 24h hours before the event.</p><br></div></div></div></div><div class="relative outline outline-2 -outline-offset-2 website-block subpalette-b hero-block-container flex justify-center outline-transparent" style="padding-bottom:24px;padding-top:24px;background-image:linear-gradient(rgba(23,18,58,.2),rgba(23,18,58,.2)),url(assets/cta-bg.jpg);background-size:cover;background-position:center;background-color:#1e1a3a"><div aria-label="viewer-overlay" class="absolute inset-0 opacity-30 bg-black"></div><div class="hero-block-layout-3 website-side-padding relative box-border flex w-full text-center" style="max-width:1440px;min-height:640px;text-align:center"><div class="w-full preview-mobile:self-center preview-desktop:self-center"><h1 class="website-heading-1 w-full">FIND OUT MORE ON HOW TO GET INVOLVED</h1><div class="flex w-full gap-4 mt-6" style="justify-content:center"><a class="website-button primary text-lg-strong no-underline outline-none flex items-center relative px-3 cursor-pointer border-solid" style="height:44px;letter-spacing:-0.012em" aria-label="hero-block-button Get Involved" rel="noopener noreferrer" target="_blank" href="https://t.me/+sGF-j6nRjXY2MzEy"><div class="flex items-center">Get Involved</div></a><a class="website-button secondary text-lg-strong no-underline outline-none flex items-center relative px-3 cursor-pointer border-solid" style="height:44px;letter-spacing:-0.012em" aria-label="hero-block-button Learn more" rel="noopener noreferrer" target="_blank" href="faq.html"><div class="flex items-center">Learn more</div></a></div></div></div></div><div class="relative outline outline-2 -outline-offset-2 website-block subpalette-a content-block-container flex justify-center outline-transparent" style="padding-bottom:24px;padding-top:24px"><div class="content-block box-border flex grow justify-between overflow-hidden px-0 preview-mobile:flex-col website-side-padding" style="max-width:1440px"><div class="flex grow self-stretch preview-mobile:!px-2" style="padding-bottom:0px;padding-top:0px;padding-left:0;padding-right:0"><div class="rich-text-html relative grow outline outline-2 -outline-offset-2 preview-mobile:min-w-0 preview-mobile:self-center outline-transparent preview-desktop:self-center"><br><img src="assets/banner-2027.png" alt="BurnHalla ReWired · 20-21/02 @Mahalla" style="width:100%;display:block"><br></div></div></div></div><div class="flex flex-col gap-2 text-center website-block subpalette-a website-footer" style="background-color:#fffffe;color:#272343;padding-bottom:48px;padding-top:48px"><div class="flex items-center justify-center gap-3"></div><div>©2027 All Rights Reserved</div></div></div></div><!--$--><!--/$--></div>
-</body></html>
+  <footer>©2027 All Rights Reserved</footer>
+</body>
+</html>
