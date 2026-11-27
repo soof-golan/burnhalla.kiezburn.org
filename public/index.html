@@ -195,7 +195,28 @@
 }
 
   </style><style id="mobile-fixes">
+/* The page's stylesheets only switch to the stacked phone layout below 450px.
+   Apply that same layout up to 767px so small tablets and narrow windows don't
+   get three squeezed columns. #root outranks the stylesheets' variant selectors. */
 @media (max-width: 767px) {
+  #root .preview-mobile\:flex-col { flex-direction: column; }
+  #root .preview-mobile\:\!px-2 { padding-left: 8px !important; padding-right: 8px !important; }
+  #root .preview-mobile\:min-w-0 { min-width: 0; }
+  #root .preview-mobile\:self-center { align-self: center; }
+
+  /* Column dividers: horizontal rules between stacked sections */
+  #root .preview-desktop\:px-8 { padding-left: 0; padding-right: 0; }
+  #root .preview-mobile\:py-8 { padding-top: 32px; padding-bottom: 32px; }
+  #root .preview-mobile\:h-px { height: 1px; }
+  #root .preview-mobile\:w-full { width: 100%; }
+
+  #root .preview-desktop\:px-4 { padding-left: 8px; padding-right: 8px; }
+  #root .website-side-padding { padding-left: 16px; padding-right: 16px; }
+  #root .website-heading-1 { font-size: 32px; }
+  #root .rich-text-html h2 { font-size: 28px; line-height: 1.3; }
+  #root .rich-text-html :is(h1, h2, h3, p) { overflow-wrap: break-word; }
+  #root .rich-text-html img { max-width: 100%; }
+
   /* Show the whole hero artwork (event name and date) instead of a cropped slice */
   #hero {
     aspect-ratio: 1200 / 630;
