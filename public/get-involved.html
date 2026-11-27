@@ -162,6 +162,16 @@
     .involved .buttons { justify-content: flex-start; margin-top: 1.5rem; }
     /* The shared secondary style has a white border (made for dark backgrounds); on white it eats 8px of the visible height */
     .involved .button.secondary { border-color: var(--ink); }
+    .involved .button { transition: transform .15s ease; }
+    .involved .button:hover,
+    .involved .button:focus-visible { transform: scale(1.04); }
+    .involved .button:active { transform: scale(1.02); }
+    @media (prefers-reduced-motion: reduce) {
+      .involved .button { transition: none; }
+      .involved .button:hover, .involved .button:focus-visible, .involved .button:active { transform: none; }
+    }
+    .button.discord { gap: .6rem; }
+    .button .icon { flex: none; }
     .button.discord { background: #7289da; border-color: #7289da; color: var(--paper); }
   </style>
 </head>
@@ -176,24 +186,24 @@
 
   <main>
     <div class="hero">
-      <img src="assets/banner-2027.png" width="1140" height="120" alt="BurnHalla ReWired · 20-21/02 @Mahalla">
+      <img src="assets/hero-2027.jpg" width="1200" height="630" alt="BurnHalla ReWired · 20-21/02 @Mahalla">
     </div>
 
     <section>
       <div class="wrap involved">
         <h2>Discord</h2>
         <p>That’s where the magic happens! If you are involved in any kind of organization (e.g. taking a lead role in your camp, realizing an area of Kiez Burn, etc.), this is the platform where you can collaborate with the community.</p>
-        <p class="note"><span aria-hidden="true">ℹ️</span> <span>You will need a linked Kiez Burn account here. Register first, then join the server.</span></p>
+        <p class="note"><span aria-hidden="true">ℹ️</span> <span>You will need a linked Kiez Burn account here. Log in to your Kiez Burn profile (or sign up if you don’t have one yet), then join the server.</span></p>
         <div class="buttons">
-          <a class="button secondary" href="https://tickets.kiezburn.org/account/register" target="_blank" rel="noopener noreferrer">1. Register here</a>
-          <a class="button discord" href="https://discord.com/invite/atxEZAfmeV" target="_blank" rel="noopener noreferrer">2. Discord Server</a>
+          <a class="button secondary" href="https://portal.kiezburn.org/" target="_blank" rel="noopener noreferrer">Kiez Burn Profile</a>
+          <a class="button discord" href="https://discord.com/invite/atxEZAfmeV" target="_blank" rel="noopener noreferrer"><svg class="icon" viewBox="0 0 24 24" width="24" height="24" fill="currentColor" aria-hidden="true"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg>Discord Server</a>
         </div>
       </div>
     </section>
 
     <section>
       <div class="wrap involved">
-        <h2>Mastersheet</h2>
+        <h2>How to get involved</h2>
         <div class="buttons">
           <a class="button secondary" href="https://docs.google.com/spreadsheets/d/1zkhRVpwKKYtBw48aFQOVWG1rlt5v86aSvDJss4_YVB0/edit?gid=0#gid=0" target="_blank" rel="noopener noreferrer">Mastersheet</a>
         </div>
