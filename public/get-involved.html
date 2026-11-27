@@ -160,6 +160,8 @@
     .involved h2 { text-transform: uppercase; }
     .involved .note { display: flex; gap: .6rem; align-items: baseline; }
     .involved .buttons { justify-content: flex-start; margin-top: 1.5rem; }
+    /* The shared secondary style has a white border (made for dark backgrounds); on white it eats 8px of the visible height */
+    .involved .button.secondary { border-color: var(--ink); }
     .button.discord { background: #7289da; border-color: #7289da; color: var(--paper); }
   </style>
 </head>
@@ -181,9 +183,10 @@
       <div class="wrap involved">
         <h2>Discord</h2>
         <p>That’s where the magic happens! If you are involved in any kind of organization (e.g. taking a lead role in your camp, realizing an area of Kiez Burn, etc.), this is the platform where you can collaborate with the community.</p>
-        <p class="note"><span aria-hidden="true">ℹ️</span> <span>You will need a linked Kiez Burn account here (more info below).</span></p>
+        <p class="note"><span aria-hidden="true">ℹ️</span> <span>You will need a linked Kiez Burn account here. Register first, then join the server.</span></p>
         <div class="buttons">
-          <a class="button discord" href="https://discord.com/invite/atxEZAfmeV" target="_blank" rel="noopener noreferrer">Discord Server</a>
+          <a class="button secondary" href="https://tickets.kiezburn.org/account/register" target="_blank" rel="noopener noreferrer">1. Register here</a>
+          <a class="button discord" href="https://discord.com/invite/atxEZAfmeV" target="_blank" rel="noopener noreferrer">2. Discord Server</a>
         </div>
       </div>
     </section>
