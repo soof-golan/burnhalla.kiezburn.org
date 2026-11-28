@@ -138,14 +138,14 @@
     .button.primary { background: var(--sun); border-color: var(--sun); color: var(--ink); }
     .button.secondary { background: var(--ink); border-color: var(--paper); color: var(--paper); }
 
-    footer { padding-block: 3rem; text-align: center; }
   
     /* FAQ */
     .faq-intro { text-align: center; padding-block: clamp(2rem, 5vw, 4rem); }
     .faq-intro h2 { font-size: clamp(2.5rem, 1.5rem + 4vw, 4rem); margin: 0 0 .5rem; }
     .faq-intro p { font-family: Merriweather, Georgia, serif; font-size: 1.25rem; }
     .faq-intro img { width: min(100%, 22rem); margin: 1.5rem auto 0; }
-    .banner img { margin-inline: auto; }
+    .banner { width: 100%; }
+    .banner img { width: 100%; height: auto; }
     .section-title { text-align: center; }
     .section-title h2 { margin: 0; }
     .cards h3, .pair h3 { font-size: 1.25rem; margin: 0 0 1rem; font-family: Merriweather, Georgia, serif; font-weight: 400; }
@@ -191,8 +191,7 @@
 
     <section>
       <div class="wrap involved">
-        <h2>Discord</h2>
-        <p>That’s where the magic happens! If you are involved in any kind of organization (e.g. taking a lead role in your camp, realizing an area of Kiez Burn, etc.), this is the platform where you can collaborate with the community.</p>
+        <p><strong>Discord</strong> - That’s where the magic happens! If you are involved in any kind of organization (e.g. taking a lead role in your camp, realizing an area of Kiez Burn, etc.), this is the platform where you can collaborate with the community.</p>
         <p class="note"><span aria-hidden="true">ℹ️</span> <span>You will need a linked Kiez Burn account here. Log in to your Kiez Burn profile (or sign up if you don’t have one yet), then join the server.</span></p>
         <div class="buttons">
           <a class="button secondary" href="https://portal.kiezburn.org/" target="_blank" rel="noopener noreferrer">Kiez Burn Profile</a>
@@ -203,14 +202,18 @@
 
     <section>
       <div class="wrap involved">
-        <h2>How to get involved</h2>
+        <p>Want to help out? Find open roles and tasks:</p>
         <div class="buttons">
           <a class="button secondary" href="https://docs.google.com/spreadsheets/d/1zkhRVpwKKYtBw48aFQOVWG1rlt5v86aSvDJss4_YVB0/edit?gid=0#gid=0" target="_blank" rel="noopener noreferrer">Mastersheet</a>
         </div>
       </div>
     </section>
+    <section>
+      <div class="wrap banner">
+        <img src="assets/banner-2027.png" width="1140" height="120" alt="BurnHalla ReWired · 20-21/02 @Mahalla" loading="lazy">
+      </div>
+    </section>
   </main>
 
-  <footer>©2027 All Rights Reserved</footer>
 </body>
 </html>
